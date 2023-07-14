@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職訓RWD</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: 1s;
+    }
+
+    hr {
+      width: 90%;
+      margin: auto;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .box {
+      width: 90%;
+      padding: 0.5%;
+      text-align: center;
+      margin: 1rem auto;
+    }
+
+    .box:not(#wda) img~* {
+      text-align: left;
+    }
+
+
+    .box img {
+      width: 45%;
+    }
+
+    #logo {
+      width: 55%;
+      margin: auto;
+    }
+
+    @media (min-width: 576px) {
+
+      .box,
+      hr {
+        position: absolute;
+      }
+
+      .box {
+        width: 20%;
+      }
+
+      .box * {
+        text-align: center !important
+      }
+
+      .box p {
+        display: none;
+      }
+
+      #logo {
+        width: 35%;
+        margin: auto;
+      }
+
+      #wda {
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
+      #html {
+        top: 10%;
+        left: -5%;
+        transform: translate(5%, -10%);
+      }
+
+      #css {
+        top: 5%;
+        left: 20%;
+        transform: translate(-20%, -5%);
+      }
+
+      #js {
+        top: 60%;
+        left: 0;
+        transform: translate(0, -60%);
+      }
+
+      #jq {
+        top: 90%;
+        left: 20%;
+        transform: translate(-20%, -90%);
+      }
+
+      #bs {
+        top: 5%;
+        left: 80%;
+        transform: translate(-80%, -5%);
+      }
+
+      #sass {
+        top: 30%;
+        left: 100%;
+        transform: translate(-100%, -30%);
+      }
+
+      #vue {
+        top: 80%;
+        left: 85%;
+        transform: translate(-85%, -80%);
+      }
+
+      #wda+hr {
+        width: 30%;
+        top: 35%;
+        left: 25%;
+        transform: rotate(10deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+
+      #html+hr {
+        width: 10%;
+        top: 30%;
+        left: 35%;
+        transform: rotate(30deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+
+      #css+hr {
+        width: 25%;
+        top: 55%;
+        left: 28%;
+        transform: rotate(-5deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+
+      #js+hr {
+        width: 10%;
+        top: 65%;
+        left: 35%;
+        transform: rotate(-30deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+
+      #jq+hr {
+        width: 12%;
+        top: 28%;
+        left: 65%;
+        transform: rotate(-25deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+
+      #bs+hr {
+        width: 22%;
+        top: 40%;
+        left: 72%;
+        transform: rotate(-5deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+
+      #sass+hr {
+        width: 12%;
+        top: 60%;
+        left: 66%;
+        transform: rotate(20deg) translate(-50%, -50%);
+        transform-origin: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box" id="wda">
+      <img src="./images/wda.png">
+      <h1>泰山職訓局</h1>
+      <h2>從零開始的網頁設計課程</h2>
+      <div id="logo">
+        <span>轉職網頁開發人員</span>
+        <span>掌握就業必備職能</span>
+        <span>由淺入深學習技術</span>
+        <span>強化職場的競爭力</span>
+      </div>
+    </div>
+    <hr>
+    <div class="box" id="html">
+      <img src="./images/html.png">
+      <h3>Html</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+    <hr>
+    <div class="box" id="css">
+      <img src="./images/css.png">
+      <h3>CSS3</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+    <hr>
+    <div class="box" id="js">
+      <img src="./images/js.png">
+      <h3>JavaScript</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+    <hr>
+    <div class="box" id="jq">
+      <img src="./images/jq.png">
+      <h3>jQuery</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+    <hr>
+    <div class="box" id="bs">
+      <img src="./images/bs.png">
+      <h3>Bootstrap</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+    <hr>
+    <div class="box" id="sass">
+      <img src="./images/sass.png">
+      <h3>Sass</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+    <hr>
+    <div class="box" id="vue">
+      <img src="./images/vue.png">
+      <h3>Vue.js</h3>
+      <p>HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML
+        檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。HTML 是基礎網頁技術，網頁瀏覽器可以讀取 HTML 檔案，成為視覺化網頁。</p>
+    </div>
+  </div>
+</body>
+
+</html>
